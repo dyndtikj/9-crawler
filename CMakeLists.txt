@@ -33,8 +33,7 @@ find_package(GTest CONFIG REQUIRED)
 
 add_library(${PROJECT_NAME} STATIC
   # enum your files and delete this comment
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/example.cpp
-)
+        include/application.hpp include/page.hpp include/parser.hpp include/safe_queue.hpp include/threadpool.hpp include/url.hpp sources/application.cpp sources/downloader.cpp sources/parser.cpp include/downloader.hpp)
 
 add_executable(demo
   ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp
